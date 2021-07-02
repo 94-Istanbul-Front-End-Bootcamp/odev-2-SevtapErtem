@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/styles.css">
+    <title>Hafta 2 Gun 2</title>
+    
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <button onclick="fetchData()" class="btn btn-dark">Getir</button>
+      <!--Todo-->
+
+      <div  id="filter" class="filter center" style="display: none">
+
+        <input
+        type="text"
+        id="search"
+        name="search"
+        maxlength="1"
+        placeholder="Search..."
+        onkeyup=" "
+        style="display: none"
+        />
+        
+      <div>
+        <input
+          id="adultValue"
+          type="checkbox"
+          style="display: none" 
+        > 18 yaşından büyük kullanıcıları listeleyiniz.</input>
+
+        <input
+          id="isActive"
+          type="checkbox"
+          style="display: none"          
+        > Aktif kullanıcıları listeleyiniz </input>
+      </div>
+
+        <button onclick="filterData()" id="filterButton" class="btn btn-dark"style="display: none">
+          Filtrele
+        </button>
+      </div>
+    </div>
+    <ul class="list">
+    
+    </ul>
+
+    <script src="index.js"></script>
+  </body>
+</html>

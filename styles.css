@@ -1,0 +1,33 @@
+.bold {
+  font-weight: bold;
+}
+
+.list {
+  width: 95%;
+}
+.wrapper {
+  border: 1px solid;
+
+  max-width: 90%;
+  max-height: 150px;
+
+  position: relative;
+  display: flex;
+
+  padding: 50px;
+  margin: 50px;
+}
+
+.filter {
+  border: 1px solid gray;
+  position: relative;
+  min-width: 80%;
+  min-height: 130px;
+  margin-top: -40px;
+  margin-left: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
